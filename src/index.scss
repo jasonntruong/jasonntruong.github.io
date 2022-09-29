@@ -1,0 +1,58 @@
+$bgColor: #EBE7E4;
+
+@font-face {
+  font-family: 'Roxborough';
+  src: url('./fonts/Roxborough/RoxboroughCF-BoldItalic.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background-color: $bgColor;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#titleContainer {
+  text-align: center;
+}
+
+#title {
+  @media only screen and (max-width: 600px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    font-size: 60px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    font-size: 100px;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    font-size: 140px;
+  
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 160px;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    font-size: 200px;
+  }
+
+  font-family: Roxborough;
+  background-color: #00000000;
+  border-width: 0px;
+}

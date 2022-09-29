@@ -1,0 +1,29 @@
+#handContainer {
+    text-align: center;
+}
+
+#hand {
+    @media only screen and (max-width: 600px) {
+        width: 200px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 300px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        width: 400px;
+    }
+    
+    @media only screen and (min-width: 992px) {
+        width: 500px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 600px;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        width: 700px;
+    }
+}
