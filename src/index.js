@@ -1,22 +1,14 @@
 import "./index.scss";
 
-import Hands from "./Hands";
-import NavBar from "./NavBar";
+import App from "./App.tsx";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import one from "./imgs/hands/one.png";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div id="titleContainer">
-      <button id="title" onClick={() => console.log("hello")}>
-        Jason Truong
-      </button>
-    </div>
-    <Hands />
-    <NavBar />
+    <App />
   </React.StrictMode>
 );
 
