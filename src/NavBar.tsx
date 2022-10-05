@@ -1,9 +1,6 @@
 import "./NavBar.scss";
 
-import Col from "react-bootstrap/Col";
 import React from "react";
-import Row from "react-bootstrap/Row";
-import { Text } from "react-bootstrap";
 
 interface Props {
   onHover: (string) => void;
@@ -33,15 +30,7 @@ function NavBar(props: Props) {
           onClick={() => props.onSelect("about")}
         >
           <div className="circle" style={{ float: "left" }}></div>
-          <p
-            style={{
-              position: "absolute",
-              float: "left",
-              display: "inline-block",
-            }}
-          >
-            About
-          </p>
+          <p className="option">About</p>
         </div>
         <div className="line"></div>
         <div

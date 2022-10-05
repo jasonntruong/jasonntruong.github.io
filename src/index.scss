@@ -1,9 +1,7 @@
+@import "./fonts.scss";
+
 $bgColor: #EBE7E4;
 
-@font-face {
-  font-family: 'Roxborough';
-  src: url('./fonts/Roxborough/RoxboroughCF-BoldItalic.otf') format('opentype');
-}
 
 body {
   margin: 0;
@@ -55,4 +53,6 @@ code {
   font-family: Roxborough;
   background-color: #00000000;
   border-width: 0px;
+  font-weight: bold;
+  font-style: italic;
 }

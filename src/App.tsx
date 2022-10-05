@@ -2,6 +2,7 @@ import "./App.scss";
 
 import React, { useState } from "react";
 
+import Card from "./Card.tsx";
 import Hands from "./Hands.tsx";
 import NavBar from "./NavBar.tsx";
 
@@ -11,15 +12,12 @@ function App() {
 
   function onHoverMenu(item: string) {
     setHovering(item);
-    console.log("hovering", hovering);
   }
   function onSelectedMenu(item: string) {
     setSelected(item);
-    console.log("selected", selected);
   }
   function onLeaveHover() {
     setHovering(selected);
-    console.log("left", hovering, selected);
   }
   return (
     <>
@@ -28,7 +26,7 @@ function App() {
       </div>
       <div className="row">
         <div className="column">
-          <p style={{ fontSize: "0.1px" }}>hi</p>
+          <p style={{ fontSize: "0.1px" }}>a</p>
         </div>
         <div className="column">
           <Hands hovering={hovering} />
@@ -41,6 +39,7 @@ function App() {
           />
         </div>
       </div>
+      <Card title="TD Bank" desc="At TD I was a software developer" />
     </>
   );
 }

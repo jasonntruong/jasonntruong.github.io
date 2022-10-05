@@ -1,7 +1,5 @@
-@font-face {
-    font-family: 'Roxborough';
-    src: url('./fonts/Roxborough/RoxboroughCF-BoldItalic.otf') format('opentype');
-  }
+@import "./fonts.scss";
+
 
 .circle {
     width: 60px;
@@ -33,10 +31,16 @@
     color: white;
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
 }
 
 .a {
     display: inline-block;
+}
+.option {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Adelle';
 }
 .container {
     width: 300px;

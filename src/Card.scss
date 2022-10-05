@@ -1,0 +1,34 @@
+@import "./fonts.scss";
+
+.background {
+    background-color: white;
+    width: 70%;
+
+}
+
+.top {
+    display: flex;
+    background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top p {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-family: "Roxborough";
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.top img {
+    width: 70px;
+    padding-right: 10px;
+}
+
+.bottom {
+    padding: 10px;
+    padding-top: 0px;
+    font-family: "Adelle"
+}
