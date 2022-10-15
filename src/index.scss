@@ -25,29 +25,15 @@ code {
 }
 
 #title {
-  @media only screen and (max-width: 600px) {
-    font-size: 40px;
-  }
+ font-size: 60px;
 
-  @media only screen and (min-width: 600px) {
-    font-size: 60px;
-  }
-  
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     font-size: 100px;
-  }
-  
-  @media only screen and (min-width: 992px) {
-    font-size: 140px;
   
   }
 
-  @media only screen and (min-width: 1200px) {
-    font-size: 160px;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    font-size: 200px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 120px;
   }
 
   font-family: Roxborough;

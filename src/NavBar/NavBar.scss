@@ -1,0 +1,51 @@
+@import "../fonts.scss";
+
+$containerWidth: 300px;
+$circleRadius: 30px;
+$spaceBetween: 10px;
+$fontSize: 30px;
+
+.container {
+  position: absolute;
+  width: $containerWidth;
+}
+.selected {
+  background: #282828;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roxborough";
+  font-size: $fontSize;
+  font-weight: bold;
+  padding-top: $spaceBetween;
+  padding-bottom: $spaceBetween;
+  position: relative;
+  text-align: center;
+  width: $containerWidth;
+}
+
+.nonselected {
+  font-family: "Adelle";
+  font-size: $fontSize;
+  padding-top: $spaceBetween;
+  padding-bottom: $spaceBetween;
+  position: relative;
+  width: $containerWidth;
+}
+
+.circle {
+  width: $circleRadius * 2;
+  height: $circleRadius * 2;
+  background: #b8b3b3;
+  border-radius: 50%;
+  float: left;
+  margin-top: $fontSize;
+  margin-right: $fontSize;
+}
+.line {
+  width: 5px;
+  height: ($circleRadius * 9) + $spaceBetween * 8;
+  background: #b8b3b3;
+  position: absolute;
+  margin-left: $circleRadius - 2.5px;
+  margin-top: $circleRadius * 2;
+}
