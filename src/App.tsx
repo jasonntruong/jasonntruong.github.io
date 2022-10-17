@@ -43,6 +43,12 @@ function App() {
             onLeave={onLeaveHover}
           />
         </div>
+
+        <Switch>
+          <Route path="/about"></Route>
+          <Route path="/experience"></Route>
+          <Route path="/projects"></Route>
+        </Switch>
       </div>
       {/* <Card title="TD Bank" desc="At TD I was a software developer" /> */}
     </>

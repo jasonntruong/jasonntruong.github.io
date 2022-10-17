@@ -1,5 +1,7 @@
 import "./NavBar.scss";
 
+import { Link, BrowserRouter as Router } from "react-router-dom";
+
 import NavOption from "./NavOption.tsx";
 import React from "react";
 
@@ -15,10 +17,20 @@ function NavBar(props: Props) {
       <div className="container" onMouseLeave={() => props.onLeave()}></div>
       <div className="bar">
         <div className="line" />
-        <NavOption title="home" {...props} />
-        <NavOption title="about" {...props} />
-        <NavOption title="experience" {...props} />
-        <NavOption title="projects" {...props} />
+        <Router>
+          <Link to="/" className="link">
+            <NavOption title="home" {...props} />
+          </Link>
+          <Link to="/about" className="link">
+            <NavOption title="about" {...props} />
+          </Link>
+          <Link to="/experience" className="link">
+            <NavOption title="experience" {...props} />
+          </Link>
+          <Link to="/projects" className="link">
+            <NavOption title="projects" {...props} />
+          </Link>
+        </Router>
       </div>
     </div>
   );
