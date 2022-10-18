@@ -1,5 +1,4 @@
 import "./Card.scss";
-import "./App.scss";
 
 import React from "react";
 import topitems from "./imgs/topitems.png";
@@ -20,9 +19,11 @@ function Card(props: Props) {
       </div>
       <div className="bottom">
         <p>{props.desc}</p>
-        {props.imgs.map((img) => {
-          return <img className="column" src={img} />;
-        })}
+        <div className="rowImg">
+          {props.imgs?.map((img) => {
+            return <img className="columnImg" src={img} />;
+          })}
+        </div>
       </div>
     </div>
   );

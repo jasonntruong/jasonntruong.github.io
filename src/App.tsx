@@ -11,8 +11,10 @@ import NavBar from "./NavBar/NavBar.tsx";
 import Projects from "./Pages/Projects.tsx";
 
 function App() {
-  const [selected, setSelected] = useState("home");
-  const [hovering, setHovering] = useState("home");
+  let currentLocation = window.location.pathname.substring(1);
+  currentLocation = currentLocation.length === 0 ? "home" : currentLocation;
+  const [selected, setSelected] = useState(currentLocation);
+  const [hovering, setHovering] = useState(currentLocation);
 
   function onHoverMenu(item: string) {
     setHovering(item);
