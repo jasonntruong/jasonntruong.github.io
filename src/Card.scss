@@ -43,3 +43,17 @@
   width: 10%;
   padding-right: 2%;
 }
+
+.modal {
+  width: 600px;
+  height: 600px;
+  background-color: #ebe7e4;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(30%);
+}
+
+.modal:focus {
+  outline: none;
+}

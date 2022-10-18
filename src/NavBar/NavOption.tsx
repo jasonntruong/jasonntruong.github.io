@@ -9,7 +9,6 @@ interface Props {
 }
 
 function NavOption(props: Props) {
-  console.log(props);
   return props.title === props.hovering ? (
     <div
       className="selected"
