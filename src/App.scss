@@ -1,26 +1,42 @@
 @import "./fonts.scss";
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column {
-    float: left;
-    width: 33.33%;
-    height: 200px;
+  float: left;
+  width: 33.33%;
+  height: 200px;
+}
+
+.column2 {
+  float: left;
+  width: 66.66%;
+  height: 200px;
 }
 
 .desc {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-family: Adelle;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Adelle;
 }
 
 .globe {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.title {
+  font-family: Roxborough;
+  font-style: italic;
+  font-size: 70px;
+}
+
+.left-content {
+  margin: 3%;
 }
