@@ -42,11 +42,12 @@
   float: left;
   width: 10%;
   padding-right: 2%;
+  cursor: pointer;
 }
 
 .modal {
-  width: 600px;
-  height: 600px;
+  width: 30vw;
+  height: 30vw;
   background-color: #ebe7e4;
   border-radius: 20px;
   margin-left: auto;
@@ -56,4 +57,13 @@
 
 .modal:focus {
   outline: none;
+}
+
+.x {
+  font-family: "Adelle";
+  font-weight: bold;
+  font-size: 25px;
+  float: right;
+  display: "inline-flex";
+  cursor: pointer;
 }

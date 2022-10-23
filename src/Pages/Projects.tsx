@@ -13,7 +13,11 @@ function Projects({ navbar }) {
           <Card
             title="Custom Keyboards"
             desc="I'm super into keyboards"
-            imgs={[globe, globe, globe]}
+            imgs={[
+              [globe, "Globe 1"],
+              [globe, "Globe 2"],
+              [globe, "Glove 3"],
+            ]}
           />
         </div>
       </div>

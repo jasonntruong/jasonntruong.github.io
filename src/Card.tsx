@@ -10,16 +10,21 @@ Modal.setAppElement(document.getElementById("root"));
 interface Props {
   title: string;
   desc: string;
-  imgs: [];
+  imgs: [string, string];
 }
 function Card(props: Props) {
   const [openModal, setOpenModal] = useState(false);
-  const [displayedImg, setDisplayedImg] = useState();
+  const [displayImg, setdisplayImg] = useState();
+  const [displayTitle, setDisplayTitle] = useState("");
 
   return (
     <>
       <Modal className="modal" isOpen={openModal}>
-        <ImageModal displayedImg={displayedImg} setOpenModal={setOpenModal} />
+        <ImageModal
+          displayImg={displayImg}
+          title={displayTitle}
+          setOpenModal={setOpenModal}
+        />
       </Modal>
       <div className="background">
         <div className="top">
@@ -29,7 +34,8 @@ function Card(props: Props) {
         <div className="bottom">
           <p>{props.desc}</p>
           <div className="rowImg">
-            {props.imgs?.map((img) => {
+            {props.imgs?.map(([img, title]) => {
+              console.log(typeof img);
               return (
                 <img
                   className="columnImg"
@@ -38,7 +44,8 @@ function Card(props: Props) {
                   alt={img}
                   onClick={() => {
                     setOpenModal(true);
-                    setDisplayedImg(img);
+                    setdisplayImg(img);
+                    setDisplayTitle(title);
                   }}
                 />
               );
