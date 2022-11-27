@@ -1,53 +1,100 @@
 @import "../fonts.scss";
 
-$containerWidth: 300px;
-$circleRadius: 30px;
-$spaceBetween: 10px;
-$fontSize: 30px;
+// Mixins
+@mixin lineStyle() {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 20px * 9 + 7px * 8;
+    margin-left: 20px - 2.5px;
+    margin-top: 20px * 2;
+  }
+  @media (min-width: 1024px) {
+    height: 30px * 9 + 10px * 8;
+    margin-left: 30px - 2.5px;
+    margin-top: 30px * 2;
+  }
+}
 
+@mixin circleStyle() {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 20px * 2;
+    height: 20px * 2;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 1024px) {
+    width: 30px * 2;
+    height: 30px * 2;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+}
+
+@mixin fontSize() {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
+
+@mixin containerWidth() {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 200px;
+  }
+  @media (min-width: 1024px) {
+    width: 300px;
+  }
+}
+
+@mixin containerStyle() {
+  @include fontSize;
+  @include containerWidth;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+// Styling
 .container {
+  @include containerWidth;
   position: absolute;
-  width: $containerWidth;
 }
 .selected {
+  @include containerStyle;
   background: #282828;
   border-radius: 20px;
   color: white;
   font-family: "Roxborough";
-  font-size: $fontSize;
   font-weight: bold;
-  padding-top: $spaceBetween;
-  padding-bottom: $spaceBetween;
   position: relative;
   text-align: center;
-  width: $containerWidth;
 }
 
 .nonselected {
+  @include containerStyle;
   font-family: "Adelle";
-  font-size: $fontSize;
-  padding-top: $spaceBetween;
-  padding-bottom: $spaceBetween;
   position: relative;
-  width: $containerWidth;
 }
 
 .circle {
-  width: $circleRadius * 2;
-  height: $circleRadius * 2;
+  @include circleStyle;
   background: #b8b3b3;
   border-radius: 50%;
   float: left;
-  margin-top: $fontSize;
-  margin-right: $fontSize;
 }
 .line {
+  @include lineStyle;
   width: 5px;
-  height: ($circleRadius * 9) + $spaceBetween * 8;
   background: #b8b3b3;
   position: absolute;
-  margin-left: $circleRadius - 2.5px;
-  margin-top: $circleRadius * 2;
+
 }
 
 .link {

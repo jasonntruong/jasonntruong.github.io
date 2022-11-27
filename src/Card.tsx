@@ -11,11 +11,32 @@ interface Props {
   title: string;
   desc: string;
   imgs: [string, string];
+  links: [string, string];
 }
 function Card(props: Props) {
   const [openModal, setOpenModal] = useState(false);
-  const [displayImg, setdisplayImg] = useState();
+  const [displayImg, setdisplayImg] = useState("");
   const [displayTitle, setDisplayTitle] = useState("");
+
+  const handleExtra = (type: string, img: string, extra: string) => {
+    return (
+      <img
+        className="columnImg"
+        src={img}
+        key={img}
+        alt={img}
+        onClick={() => {
+          if (type === "link") {
+            window.open(extra, "_blank", "noopener,noreferrer");
+          } else if (type === "image") {
+            setOpenModal(true);
+            setdisplayImg(img);
+            setDisplayTitle(extra);
+          }
+        }}
+      />
+    );
+  };
 
   return (
     <>
@@ -35,22 +56,19 @@ function Card(props: Props) {
           <p>{props.desc}</p>
           <div className="rowImg">
             {props.imgs?.map(([img, title]) => {
-              console.log(typeof img);
-              return (
-                <img
-                  className="columnImg"
-                  src={img}
-                  key={img}
-                  alt={img}
-                  onClick={() => {
-                    setOpenModal(true);
-                    setdisplayImg(img);
-                    setDisplayTitle(title);
-                  }}
-                />
-              );
+              return handleExtra("image", img, title);
+            })}
+            {props.links?.map(([img, link]) => {
+              return handleExtra("link", img, link);
             })}
           </div>
+
+          {props.imgs && (
+            <i style={{ color: "gray", fontSize: "12px" }}>
+              <br />
+              {"click images to enlarge"}
+            </i>
+          )}
         </div>
       </div>
     </>

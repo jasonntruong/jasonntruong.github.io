@@ -18,6 +18,7 @@ function Projects({ navbar }) {
               [globe, "Globe 2"],
               [globe, "Glove 3"],
             ]}
+            links={[[globe, "https://www.google.com"]]}
           />
         </div>
       </div>

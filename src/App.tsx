@@ -1,7 +1,7 @@
 import "./App.scss";
 
-import React, { useState } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 import About from "./Pages/About.tsx";
 import Card from "./Card.tsx";
@@ -11,10 +11,15 @@ import NavBar from "./NavBar/NavBar.tsx";
 import Projects from "./Pages/Projects.tsx";
 
 function App() {
-  let currentLocation = window.location.pathname.substring(1);
-  currentLocation = currentLocation.length === 0 ? "home" : currentLocation;
-  const [selected, setSelected] = useState(currentLocation);
-  const [hovering, setHovering] = useState(currentLocation);
+  const [selected, setSelected] = useState("");
+  const [hovering, setHovering] = useState("");
+
+  useEffect(() => {
+    let currentLocation = window.location.pathname.substring(1);
+    currentLocation = currentLocation.length === 0 ? "home" : currentLocation;
+    setSelected(currentLocation);
+    setHovering(currentLocation);
+  }, [selected]);
 
   function onHoverMenu(item: string) {
     setHovering(item);
@@ -34,31 +39,26 @@ function App() {
       onLeave={onLeaveHover}
     />
   );
-
   return (
-    <>
+    <Router>
       <div id="titleContainer">
-        <button id="title">Jason Truong</button>
+        <Link to="/" id="title" onClick={() => onSelectedMenu("home")}>
+          Jason Truong
+        </Link>
       </div>
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={<Home hovering={hovering} navbar={navbar} />}
-          />
-          <Route path="/about" element={<About navbar={navbar} />}></Route>
-          <Route
-            path="/experience"
-            element={<Experience navbar={navbar} />}
-          ></Route>
-          <Route
-            path="/projects"
-            element={<Projects navbar={navbar} />}
-          ></Route>
-        </Routes>
-      </Router>
-      {/* <Card title="TD Bank" desc="At TD I was a software developer" /> */}
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home hovering={hovering} navbar={navbar} />}
+        />
+        <Route path="/about" element={<About navbar={navbar} />}></Route>
+        <Route
+          path="/experience"
+          element={<Experience navbar={navbar} />}
+        ></Route>
+        <Route path="/projects" element={<Projects navbar={navbar} />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

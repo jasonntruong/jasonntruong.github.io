@@ -7,7 +7,8 @@ function ImageModal({ displayImg, setOpenModal, title }) {
         style={{
           fontFamily: "Adelle",
           fontWeight: "bold",
-          fontSize: "25px",
+          fontSize: "2vw",
+          paddingLeft: "2vw",
           display: "inline-flex",
         }}
       >
@@ -19,7 +20,6 @@ function ImageModal({ displayImg, setOpenModal, title }) {
       </p>
       <div
         style={{
-          position: "absolute",
           display: "flex",
           justifyContent: "center",
           margin: "auto",
@@ -29,7 +29,7 @@ function ImageModal({ displayImg, setOpenModal, title }) {
         <img
           src={displayImg}
           style={{
-            width: "80%",
+            width: "70%",
           }}
         />
       </div>

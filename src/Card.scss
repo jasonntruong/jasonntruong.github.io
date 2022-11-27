@@ -46,13 +46,13 @@
 }
 
 .modal {
-  width: 30vw;
-  height: 30vw;
+  width: 35vw;
+  height: 35vw;
   background-color: #ebe7e4;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(30%);
+  transform: translateY(25%);
 }
 
 .modal:focus {
@@ -62,8 +62,9 @@
 .x {
   font-family: "Adelle";
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2vw;
   float: right;
+  padding-right: 2vw;
   display: "inline-flex";
   cursor: pointer;
 }

@@ -5,6 +5,7 @@
   clear: both;
 }
 
+
 .column {
   float: left;
   width: 33.33%;
@@ -18,14 +19,25 @@
 }
 
 .desc {
-  font-size: 20px;
+  @media (max-width: 1023px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+  font-size: 12px;
   text-align: center;
   font-weight: bold;
   font-family: Adelle;
 }
 
 .globe {
-  width: 100px;
+  @media (max-width: 1023px) {
+    width: 70px;
+  }
+  @media (min-width: 1024px) {
+    width: 100px;
+  }
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -35,8 +47,19 @@
   font-family: Roxborough;
   font-style: italic;
   font-size: 70px;
+  line-height: 0px;
+  padding-bottom: 3%;
+}
+
+#title {
+  text-decoration: none;
+  color: inherit;
+}
+
+#titleContainer {
+  margin-bottom: 4%;
 }
 
 .left-content {
-  margin: 3%;
+  margin-left: 3%;
 }
