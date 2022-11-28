@@ -29,7 +29,7 @@ function ImageModal({ displayImg, setOpenModal, title }) {
         <img
           src={displayImg}
           style={{
-            width: "70%",
+            width: "60%",
           }}
         />
       </div>

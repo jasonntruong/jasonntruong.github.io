@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import HamburgerMenu from "../HamburgerMenu.tsx";
 import Hands from "../Hands.tsx";
 import { slide as Menu } from "react-burger-menu";
 import NavBar from "../NavBar/NavBar.tsx";
@@ -9,44 +10,34 @@ import hamburger from "../imgs/hamburger.png";
 interface Props {
   hovering: string;
   navbar: NavBar;
+  isMobile: boolean;
 }
 
 function Home(props: Props) {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-  });
-
-  if (width >= 768) {
+  if (props.isMobile) {
     return (
-      <div className="row">
-        <div className="column">
-          <img className="globe" src={globe} />
-          <p className="desc">Third Year CS @ TMU</p>
-          <p className="desc">Software Dev Intern @ TD</p>
-          <p className="desc">Aspiring SWE</p>
-        </div>
-        <div className="column">
-          <Hands hovering={props.hovering} />
-        </div>
-        <div className="column">{props.navbar}</div>
+      <div>
+        <HamburgerMenu />
+        <img className="globe" src={globe} />
+        <p className="desc">Third Year CS @ TMU</p>
+        <p className="desc">Software Dev Intern @ TD</p>
+        <p className="desc">Aspiring SWE</p>
       </div>
     );
   }
   return (
-    <div>
-      <img className="hamburger" src={hamburger} style={{ width: "6vw" }} />
+    <div className="row">
+      <div className="column">
+        <img className="globe" src={globe} />
+        <p className="desc">Third Year CS @ TMU</p>
+        <p className="desc">Software Dev Intern @ TD</p>
+        <p className="desc">Aspiring SWE</p>
+      </div>
+      <div className="column">
+        <Hands hovering={props.hovering} />
+      </div>
+      <div className="column">{props.navbar}</div>
     </div>
-    // <Menu left width={"20%"} noOverlay customBurgerIcon={false}>
-    //   <a id="home" className="menu-item" href="/">
-    //     Home
-    //   </a>
-    // </Menu>
   );
 }
 

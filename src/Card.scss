@@ -12,17 +12,39 @@
   align-items: center;
 }
 
-.top p {
+.cardTitle {
+  @media (min-width: 400px) and (max-width: 1023px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+  font-size: 12px;
   display: flex;
-  font-size: 20px;
   color: white;
   font-family: "Roxborough";
   padding-left: 10px;
   display: inline-block;
 }
 
+.cardDesc {
+  @media (min-width: 400px) and (max-width: 1023px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+  font-size: 10px;
+}
+
 .top img {
-  width: 70px;
+  @media (min-width: 400px) and (max-width: 1023px) {
+    width: 50px;
+  }
+  @media (min-width: 1024px) {
+    width: 70px;
+  }
+  width: 40px;
   padding-right: 10px;
 }
 
@@ -46,8 +68,8 @@
 }
 
 .modal {
-  width: 35vw;
-  height: 35vw;
+  width: min(35vw, 70vh);
+  height: min(35vw, 70vh);
   background-color: #ebe7e4;
   border-radius: 20px;
   margin-left: auto;

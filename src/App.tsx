@@ -13,6 +13,14 @@ import Projects from "./Pages/Projects.tsx";
 function App() {
   const [selected, setSelected] = useState("");
   const [hovering, setHovering] = useState("");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768);
+    }
+    window.addEventListener("resize", handleResize);
+  });
 
   useEffect(() => {
     let currentLocation = window.location.pathname.substring(1);
@@ -49,14 +57,22 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home hovering={hovering} navbar={navbar} />}
+          element={
+            <Home hovering={hovering} navbar={navbar} isMobile={isMobile} />
+          }
         />
-        <Route path="/about" element={<About navbar={navbar} />}></Route>
+        <Route
+          path="/about"
+          element={<About navbar={navbar} isMobile={isMobile} />}
+        ></Route>
         <Route
           path="/experience"
-          element={<Experience navbar={navbar} />}
+          element={<Experience navbar={navbar} isMobile={isMobile} />}
         ></Route>
-        <Route path="/projects" element={<Projects navbar={navbar} />}></Route>
+        <Route
+          path="/projects"
+          element={<Projects navbar={navbar} isMobile={isMobile} />}
+        ></Route>
       </Routes>
     </Router>
   );

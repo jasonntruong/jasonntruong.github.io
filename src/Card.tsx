@@ -49,11 +49,11 @@ function Card(props: Props) {
       </Modal>
       <div className="background">
         <div className="top">
-          <p>{props.title}</p>
+          <p className="cardTitle">{props.title}</p>
           <img src={topitems}></img>
         </div>
         <div className="bottom">
-          <p>{props.desc}</p>
+          <p className="cardDesc">{props.desc}</p>
           <div className="rowImg">
             {props.imgs?.map(([img, title]) => {
               return handleExtra("image", img, title);
