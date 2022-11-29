@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "./Card.scss";
 
 import React, { useState } from "react";

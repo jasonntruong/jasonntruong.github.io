@@ -2,7 +2,13 @@ import "./Modal.scss";
 
 import React from "react";
 
-function ImageModal({ displayImg, setOpenModal, title }) {
+interface Props {
+  displayImg: string;
+  setOpenModal: (boolean) => void;
+  title: string;
+}
+
+function ImageModal({ displayImg, setOpenModal, title }: Props) {
   return (
     <div>
       <p className="modalTitle">{title}</p>

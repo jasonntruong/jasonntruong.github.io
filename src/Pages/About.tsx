@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "../App.scss";
 
 import Card from "../Card.tsx";

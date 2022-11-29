@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
-
+// @ts-nocheck
 import HamburgerMenu from "../HamburgerMenu.tsx";
 import Hands from "../Hands.tsx";
-import { slide as Menu } from "react-burger-menu";
 import NavBar from "../NavBar/NavBar.tsx";
+import React from "react";
 import globe from "../imgs/globe.webp";
-import hamburger from "../imgs/hamburger.png";
 
 interface Props {
   hovering: string;

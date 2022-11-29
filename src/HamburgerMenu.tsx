@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "./hamburgermenu.scss";
 
 import React, { useState } from "react";

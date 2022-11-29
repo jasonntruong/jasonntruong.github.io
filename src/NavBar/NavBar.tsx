@@ -1,7 +1,7 @@
+// @ts-nocheck
 import "./NavBar.scss";
 
-import { Link, BrowserRouter as Router } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import NavOption from "./NavOption.tsx";
 import React from "react";
 
