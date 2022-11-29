@@ -10,24 +10,25 @@ interface Props {
   isMobile: boolean;
 }
 function Experience({ navbar, isMobile }: Props) {
+  const info = (
+    <>
+      <h1 className="title">Experience</h1>
+      <Card title="Custom Keyboards" desc="I'm super into keyboards" />
+    </>
+  );
+
   if (isMobile) {
     return (
       <div>
         <HamburgerMenu />
-        <div style={{ marginLeft: "15px" }}>
-          <h1 className="title">Experience</h1>
-          <Card title="Custom Keyboards" desc="I'm super into keyboards" />
-        </div>
+        <div className="mobileInfo">{info}</div>
       </div>
     );
   }
   return (
     <div className="row">
       <div className="column2">
-        <div className="left-content">
-          <h1 className="title">Experience</h1>
-          <Card title="Custom Keyboards" desc="I'm super into keyboards" />
-        </div>
+        <div className="left-content">{info}</div>
       </div>
       <div className="column">{navbar}</div>
     </div>

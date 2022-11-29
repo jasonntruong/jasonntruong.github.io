@@ -50,7 +50,7 @@ function Card(props: Props) {
       <div className="background">
         <div className="top">
           <p className="cardTitle">{props.title}</p>
-          <img src={topitems}></img>
+          <img alt="top items" src={topitems}></img>
         </div>
         <div className="bottom">
           <p className="cardDesc">{props.desc}</p>
@@ -64,7 +64,7 @@ function Card(props: Props) {
           </div>
 
           {props.imgs && (
-            <i style={{ color: "gray", fontSize: "12px" }}>
+            <i className="bottomText">
               <br />
               {"click images to enlarge"}
             </i>

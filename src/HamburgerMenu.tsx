@@ -23,19 +23,25 @@ function HamburgerMenu() {
           }}
         >
           <a
-            href="/"
+            href={currentLocation === "home" ? "javascript:void(0);" : "/"}
             className={currentLocation === "home" ? "selected-bm-item" : ""}
           >
             home
           </a>
           <a
-            href="/about"
+            href={
+              currentLocation === "about" ? "javascript:void(0);" : "/about"
+            }
             className={currentLocation === "about" ? "selected-bm-item" : ""}
           >
             about
           </a>
           <a
-            href="/experience"
+            href={
+              currentLocation === "experience"
+                ? "javascript:void(0);"
+                : "/experience"
+            }
             className={
               currentLocation === "experience" ? "selected-bm-item" : ""
             }
@@ -43,7 +49,11 @@ function HamburgerMenu() {
             experience
           </a>
           <a
-            href="/projects"
+            href={
+              currentLocation === "projects"
+                ? "javascript:void(0);"
+                : "/projects"
+            }
             className={currentLocation === "projects" ? "selected-bm-item" : ""}
           >
             projects
@@ -51,10 +61,9 @@ function HamburgerMenu() {
         </Menu>
       )}
       <img
-        id="hamburger"
+        className="hamburger-btn"
         alt="hamburger-menu"
         src={hamburger}
-        style={{ width: "6vw", marginLeft: "15px", cursor: "pointer" }}
         onClick={() => {
           setIsMenuOpen(!isMenuOpen);
         }}

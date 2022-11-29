@@ -1,4 +1,9 @@
 @import "./fonts.scss";
+
+.mobileInfo {
+  margin-left: 15px;
+}
+
 .row:after {
   content: "";
   display: table;

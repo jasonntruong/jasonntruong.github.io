@@ -1,37 +1,17 @@
-import React, { useState } from "react";
+import "./Modal.scss";
+
+import React from "react";
 
 function ImageModal({ displayImg, setOpenModal, title }) {
   return (
     <div>
-      <p
-        style={{
-          fontFamily: "Adelle",
-          fontWeight: "bold",
-          fontSize: "2vw",
-          paddingLeft: "2vw",
-          display: "inline-flex",
-        }}
-      >
-        {title}
-      </p>
+      <p className="modalTitle">{title}</p>
 
       <p className="x" onClick={() => setOpenModal(false)}>
         x
       </p>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          margin: "auto",
-        }}
-      >
-        {/* <button onClick={() => setOpenModal(false)}>close</button> */}
-        <img
-          src={displayImg}
-          style={{
-            width: "60%",
-          }}
-        />
+      <div className="imgContainer">
+        <img className="displayImg" src={displayImg} alt="displayimg" />
       </div>
     </div>
   );
