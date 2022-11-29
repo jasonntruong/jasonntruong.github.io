@@ -9,7 +9,11 @@ import Experience from "./Pages/Experience.tsx";
 import { Helmet } from "react-helmet";
 import Home from "./Pages/Home.tsx";
 import NavBar from "./NavBar/NavBar.tsx";
+import Preview from "./Preview.tsx";
 import Projects from "./Pages/Projects.tsx";
+import email from "./imgs/email.png";
+import github from "./imgs/github.png";
+import linkedin from "./imgs/linkedin.png";
 
 function App() {
   const [selected, setSelected] = useState("");
@@ -60,7 +64,31 @@ function App() {
           <Link to="/" id="title" onClick={() => onSelectedMenu("home")}>
             Jason Truong
           </Link>
+          <div id="linkContainer">
+            <Preview
+              className="imgLink"
+              img={linkedin}
+              type={"link"}
+              extra={"https://www.linkedin.com/in/jasonn-truong/"}
+              smaller={true}
+            />
+            <Preview
+              className="imgLink"
+              img={github}
+              type={"link"}
+              extra={"https://github.com/jasonntruong"}
+              smaller={true}
+            />
+            <Preview
+              className="imgLink"
+              img={email}
+              type={"link"}
+              extra={"mailto:jason.truong@ryerson.ca"}
+              smaller={true}
+            />
+          </div>
         </div>
+
         <Routes>
           <Route
             path="/"

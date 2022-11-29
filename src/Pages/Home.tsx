@@ -12,25 +12,26 @@ interface Props {
 }
 
 function Home(props: Props) {
+  const info = (
+    <>
+      <img className="globe" src={globe} />
+      <p className="desc">Third Year CS @ TMU</p>
+      <p className="desc">Software Dev Intern @ TD</p>
+      <p className="desc">Aspiring SWE</p>
+    </>
+  );
+
   if (props.isMobile) {
     return (
       <div>
         <HamburgerMenu />
-        <img className="globe" src={globe} />
-        <p className="desc">Third Year CS @ TMU</p>
-        <p className="desc">Software Dev Intern @ TD</p>
-        <p className="desc">Aspiring SWE</p>
+        {info}
       </div>
     );
   }
   return (
     <div className="row">
-      <div className="column">
-        <img className="globe" src={globe} />
-        <p className="desc">Third Year CS @ TMU</p>
-        <p className="desc">Software Dev Intern @ TD</p>
-        <p className="desc">Aspiring SWE</p>
-      </div>
+      <div className="column">{info}</div>
       <div className="column">
         <Hands hovering={props.hovering} />
       </div>

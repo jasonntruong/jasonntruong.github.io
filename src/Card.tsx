@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 import ImageModal from "./ImageModal.tsx";
 import Modal from "react-modal";
+import Preview from "./Preview.tsx";
 import topitems from "./imgs/topitems.png";
 
 Modal.setAppElement(document.getElementById("root"));
@@ -18,26 +19,6 @@ function Card(props: Props) {
   const [openModal, setOpenModal] = useState(false);
   const [displayImg, setdisplayImg] = useState("");
   const [displayTitle, setDisplayTitle] = useState("");
-
-  const handleExtra = (type: string, img: string, extra: string) => {
-    return (
-      <img
-        className="columnImg"
-        src={img}
-        key={img}
-        alt={img}
-        onClick={() => {
-          if (type === "link") {
-            window.open(extra, "_blank", "noopener,noreferrer");
-          } else if (type === "image") {
-            setOpenModal(true);
-            setdisplayImg(img);
-            setDisplayTitle(extra);
-          }
-        }}
-      />
-    );
-  };
 
   return (
     <>
@@ -57,10 +38,22 @@ function Card(props: Props) {
           <p className="cardDesc">{props.desc}</p>
           <div className="rowImg">
             {props.imgs?.map(([img, title]) => {
-              return handleExtra("image", img, title);
+              return (
+                <Preview
+                  key={img}
+                  img={img}
+                  type={"image"}
+                  extra={title}
+                  onImageClick={() => {
+                    setOpenModal(true);
+                    setdisplayImg(img);
+                    setDisplayTitle(title);
+                  }}
+                />
+              );
             })}
             {props.links?.map(([img, link]) => {
-              return handleExtra("link", img, link);
+              return <Preview key={img} img={img} type={"link"} extra={link} />;
             })}
           </div>
 
