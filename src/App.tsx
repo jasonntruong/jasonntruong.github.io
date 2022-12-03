@@ -1,7 +1,7 @@
 // @ts-nocheck
 import "./App.scss";
 
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Link, Route, HashRouter as Router, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
 import About from "./Pages/About.tsx";
@@ -103,15 +103,15 @@ function App() {
           <Route
             path="/about"
             element={<About navbar={navbar} isMobile={isMobile} />}
-          ></Route>
+          />
           <Route
             path="/experience"
             element={<Experience navbar={navbar} isMobile={isMobile} />}
-          ></Route>
+          />
           <Route
             path="/projects"
             element={<Projects navbar={navbar} isMobile={isMobile} />}
-          ></Route>
+          />
         </Routes>
       </Router>
     </div>
