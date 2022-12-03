@@ -33,7 +33,7 @@ function ImageModal({
         <img
           className={`displayImg-${limittingDimension}`}
           src={displayImg}
-          alt="displayimg"
+          alt={title + " img"}
         />
       </div>
     </div>

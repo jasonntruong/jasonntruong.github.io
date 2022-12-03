@@ -9,17 +9,19 @@ interface Props {
   type: PreviewType;
   extra?: string;
   onImageClick: () => void;
+  altText: string;
+
   smaller?: boolean;
 }
 
-function Preview({ img, type, extra, onImageClick, smaller }: Props) {
+function Preview({ img, type, extra, onImageClick, altText, smaller }: Props) {
   // image or link preview
   return (
     <img
       className={smaller ? "smallerPreview" : "preview"}
       src={img}
       key={img}
-      alt={img}
+      alt={altText}
       onClick={() => {
         if (type === "link") {
           window.open(extra, "_blank", "noopener,noreferrer");

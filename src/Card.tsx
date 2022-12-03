@@ -17,7 +17,7 @@ interface Props {
 }
 function Card(props: Props) {
   const [openModal, setOpenModal] = useState(false);
-  const [displayImg, setdisplayImg] = useState("");
+  const [displayImg, setDisplayImg] = useState("");
   const [displayTitle, setDisplayTitle] = useState("");
   const [limittingDimension, setLimittingDimension] = useState("");
 
@@ -44,17 +44,18 @@ function Card(props: Props) {
                 <Preview
                   key={img}
                   img={img}
+                  altText={title}
                   type={"image"}
                   extra={title}
                   onImageClick={() => {
                     setOpenModal(true);
-                    setdisplayImg(img);
+                    setDisplayImg(img);
                     setDisplayTitle(title);
                     setLimittingDimension(limittingDimension);
                   }}
                 />
               );
-            })}{" "}
+            })}
           </div>
           <div className="rowImg">
             {props.links?.map(([img, link]) => {

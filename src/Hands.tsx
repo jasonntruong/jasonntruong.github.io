@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "./hands.scss";
 
 import React from "react";

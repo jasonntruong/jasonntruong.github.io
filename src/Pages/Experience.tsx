@@ -40,12 +40,12 @@ function Experience({ navbar, isMobile }: Props) {
           <p>
             {
               "Advancing the UI/workflow to improve user accessibility and designing solutions to counter multi-factor authentication fatigue attacks for our millions of mobile app and SDK users, as well as developing E2E tests to ensure shipped code works correctly"
-            }{" "}
+            }
             <br />
-            <br />{" "}
+            <br />
             {
               "Using React Native, JavaScript, TypeScript, Java, Android Studio, Xcode, Jira, Git, Bitbucket, Jenkins, Detox"
-            }{" "}
+            }
           </p>
         }
       />

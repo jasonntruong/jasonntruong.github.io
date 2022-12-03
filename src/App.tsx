@@ -72,6 +72,7 @@ function App() {
               type={"link"}
               extra={"https://www.linkedin.com/in/jasonn-truong/"}
               smaller={true}
+              alt={"LinkedIn"}
             />
             <Preview
               className="imgLink"
@@ -79,6 +80,7 @@ function App() {
               type={"link"}
               extra={"https://github.com/jasonntruong"}
               smaller={true}
+              alt={"GitHub"}
             />
             <Preview
               className="imgLink"
@@ -86,6 +88,7 @@ function App() {
               type={"link"}
               extra={"mailto:jason.truong@ryerson.ca"}
               smaller={true}
+              alt={"Email"}
             />
           </div>
         </div>
