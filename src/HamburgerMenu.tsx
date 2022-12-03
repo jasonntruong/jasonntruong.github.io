@@ -24,7 +24,7 @@ function HamburgerMenu() {
           }}
         >
           <a
-            href={currentLocation === "home" ? "javascript:void(0);" : "/"}
+            href={currentLocation === "home" ? "javascript:void(0);" : "/#"}
             className={currentLocation === "home" ? "selected-bm-item" : ""}
             rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@ function HamburgerMenu() {
           </a>
           <a
             href={
-              currentLocation === "about" ? "javascript:void(0);" : "/about"
+              currentLocation === "about" ? "javascript:void(0);" : "/#/about"
             }
             className={currentLocation === "about" ? "selected-bm-item" : ""}
             rel="noopener noreferrer"
@@ -43,7 +43,7 @@ function HamburgerMenu() {
             href={
               currentLocation === "experience"
                 ? "javascript:void(0);"
-                : "/experience"
+                : "/#/experience"
             }
             className={
               currentLocation === "experience" ? "selected-bm-item" : ""
@@ -56,7 +56,7 @@ function HamburgerMenu() {
             href={
               currentLocation === "projects"
                 ? "javascript:void(0);"
-                : "/projects"
+                : "/#/projects"
             }
             className={currentLocation === "projects" ? "selected-bm-item" : ""}
             rel="noopener noreferrer"
