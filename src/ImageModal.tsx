@@ -1,6 +1,6 @@
 import "./Modal.scss";
 
-import React from "react";
+import React, { useEffect } from "react";
 
 interface Props {
   displayImg: string;
@@ -9,6 +9,14 @@ interface Props {
 }
 
 function ImageModal({ displayImg, setOpenModal, title }: Props) {
+  useEffect(() => {
+    document.addEventListener("keyup", (e) => {
+      if (e.key === "Escape") {
+        setOpenModal(false);
+      }
+    });
+  }, []);
+
   return (
     <div>
       <p className="modalTitle">{title}</p>

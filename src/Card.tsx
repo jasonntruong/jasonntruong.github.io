@@ -51,12 +51,21 @@ function Card(props: Props) {
                   }}
                 />
               );
-            })}
+            })}{" "}
+          </div>
+          <div className="rowImg">
             {props.links?.map(([img, link]) => {
-              return <Preview key={img} img={img} type={"link"} extra={link} />;
+              return (
+                <Preview
+                  key={img}
+                  img={img}
+                  type={"link"}
+                  extra={link}
+                  smaller={true}
+                />
+              );
             })}
           </div>
-
           {props.imgs && (
             <i className="bottomText">
               <br />

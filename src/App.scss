@@ -71,20 +71,14 @@
 }
 
 #titleContainer {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
-#linkContainer {
-  position: absolute;
-  float: none;
-  display: table;
+#linkContainer {  
   margin-top: 0.5%;
-  width: 30%;
-  display: block;
-
-  background: red;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .left-content {
