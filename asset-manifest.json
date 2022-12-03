@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7385c12c.css",
-    "main.js": "/static/js/main.4fc9d87f.js",
+    "main.js": "/static/js/main.6cfddcc7.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/internals.png": "/static/media/internals.8aa584c3e76549bcfc56.png",
     "static/media/dontspray.png": "/static/media/dontspray.dbf337a11c2e6c626ad7.png",
@@ -17,18 +17,18 @@
     "static/media/one.png": "/static/media/one.6d32f3d6cf13a9b82282.png",
     "static/media/AdelleSansEXT-Regular.ttf": "/static/media/AdelleSansEXT-Regular.6264b980b5565d462b78.ttf",
     "static/media/globe.webp": "/static/media/globe.fa8e78bf47af887153c5.webp",
-    "static/media/email.png": "/static/media/email.34365e46bc3d9f773788.png",
     "static/media/RoxboroughCF-BoldItalic.otf": "/static/media/RoxboroughCF-BoldItalic.711224acdb29bce27b1d.otf",
     "static/media/RoxboroughCF-Bold.otf": "/static/media/RoxboroughCF-Bold.0ef40514fddda34af155.otf",
+    "static/media/email.png": "/static/media/email.240776c0ce2f66df6ca0.png",
     "static/media/linkedin.png": "/static/media/linkedin.ba884e1f9ad4362348c1.png",
     "static/media/hamburger.png": "/static/media/hamburger.a633845bca57a0d1a648.png",
     "index.html": "/index.html",
     "main.7385c12c.css.map": "/static/css/main.7385c12c.css.map",
-    "main.4fc9d87f.js.map": "/static/js/main.4fc9d87f.js.map",
+    "main.6cfddcc7.js.map": "/static/js/main.6cfddcc7.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7385c12c.css",
-    "static/js/main.4fc9d87f.js"
+    "static/js/main.6cfddcc7.js"
   ]
 }
