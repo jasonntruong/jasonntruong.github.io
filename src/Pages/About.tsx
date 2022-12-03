@@ -6,6 +6,8 @@ import HamburgerMenu from "../HamburgerMenu.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import React from "react";
 import cafe from "../imgs/about/cafe.png";
+import cscu from "../imgs/about/cscu.png";
+import headshot from "../imgs/about/headshot.png";
 import keyboard from "../imgs/about/keyboard.png";
 
 interface Props {
@@ -20,6 +22,7 @@ function About({ navbar, isMobile }: Props) {
       <Card
         title="Who's Jason?"
         desc={`I'm a 20 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto \n\n I build and code a lot of random projects that you should check out on my GitHub :D`}
+        imgs={[[headshot, "A Big Me"]]}
       />
       <Card
         title="Hobbies"
@@ -32,6 +35,7 @@ function About({ navbar, isMobile }: Props) {
       <Card
         title="Extracurriculars"
         desc={`Currently I'm VP Communications on TMU's Computer Science Course Union \n\n I act as the public relations contact for students and student societies on behalf of the CSCU. I also design promotions and promote for all of our events via our Instagram, website, and monthly newsletter`}
+        imgs={[[cscu, "CSCU Pub Night Social"]]}
       />
       <br />
     </>
