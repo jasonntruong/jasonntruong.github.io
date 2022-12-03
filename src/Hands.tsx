@@ -18,6 +18,7 @@ function Hands(props: Props) {
       <img
         id="hand"
         src={hands[props.hovering]}
+        loading="lazy"
         alt={props.hovering + " hand"}
       />
     </div>

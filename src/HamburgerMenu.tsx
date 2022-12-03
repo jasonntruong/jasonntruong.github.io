@@ -69,6 +69,7 @@ function HamburgerMenu() {
         className="hamburger-btn"
         alt="hamburger-menu"
         src={hamburger}
+        loading="lazy"
         onClick={() => {
           setIsMenuOpen(!isMenuOpen);
         }}

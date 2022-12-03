@@ -14,7 +14,7 @@ interface Props {
 function Home(props: Props) {
   const info = (
     <>
-      <img className="globe" src={globe} />
+      <img className="globe" src={globe} loading="lazy" />
       <p className="desc">Third Year CS @ TMU</p>
       <p className="desc">Software Dev Intern @ TD</p>
       <p className="desc">Aspiring SWE</p>

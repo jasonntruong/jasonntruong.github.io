@@ -38,17 +38,6 @@
   font-size: 10px;
 }
 
-.top img {
-  @media (min-width: 400px) and (max-width: 1023px) {
-    width: 50px;
-  }
-  @media (min-width: 1024px) {
-    width: 70px;
-  }
-  width: 40px;
-  padding-right: 10px;
-}
-
 .bottom {
   padding: 10px;
   padding-top: 0px;

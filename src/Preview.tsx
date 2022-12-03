@@ -21,6 +21,7 @@ function Preview({ img, type, extra, onImageClick, altText, smaller }: Props) {
       className={smaller ? "smallerPreview" : "preview"}
       src={img}
       key={img}
+      loading="lazy"
       alt={altText}
       onClick={() => {
         if (type === "link") {

@@ -33,6 +33,7 @@ function ImageModal({
         <img
           className={`displayImg-${limittingDimension}`}
           src={displayImg}
+          loading="lazy"
           alt={title + " img"}
         />
       </div>

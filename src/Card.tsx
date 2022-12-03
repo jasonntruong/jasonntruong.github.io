@@ -34,7 +34,6 @@ function Card(props: Props) {
       <div className="background">
         <div className="top">
           <p className="cardTitle">{props.title}</p>
-          <img alt="top items" src={topitems}></img>
         </div>
         <div className="bottom">
           <p className="cardDesc">{props.desc}</p>
