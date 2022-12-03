@@ -9,7 +9,7 @@ import hamburger from "./imgs/hamburger.png";
 function HamburgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  let currentLocation = window.location.pathname.substring(1);
+  let currentLocation = window.location.hash.substring(2);
   currentLocation = currentLocation.length === 0 ? "home" : currentLocation;
   const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 

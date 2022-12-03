@@ -28,7 +28,7 @@ function App() {
   });
 
   useEffect(() => {
-    let currentLocation = window.location.pathname.substring(1);
+    let currentLocation = window.location.hash.substring(2);
     currentLocation = currentLocation.length === 0 ? "home" : currentLocation;
     setSelected(currentLocation);
     setHovering(currentLocation);
