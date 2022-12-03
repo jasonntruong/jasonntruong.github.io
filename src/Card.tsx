@@ -70,10 +70,7 @@ function Card(props: Props) {
             })}
           </div>
           {props.imgs && (
-            <i className="bottomText">
-              <br />
-              {"click images to enlarge"}
-            </i>
+            <i className="bottomText">{"click images to enlarge"}</i>
           )}
         </div>
       </div>

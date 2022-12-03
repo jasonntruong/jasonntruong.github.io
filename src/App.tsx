@@ -52,6 +52,7 @@ function App() {
       onLeave={onLeaveHover}
     />
   );
+
   return (
     <div>
       <Helmet>
