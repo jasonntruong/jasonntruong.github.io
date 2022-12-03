@@ -44,8 +44,8 @@ function Projects({ navbar, isMobile }: Props) {
         title="Morning Run"
         desc={`Created a web server and 4 client alarm clock network that turns off when 1 randomly selected, scattered-across-the-room client module is pressed – forcing the user to run around their room each morning and overcome their sleep inertia \n\n Developed using C++, PHP, Python, SQL, HTML, CSS, HTTP Server (deployed on Rasp Pi), Arduino, and ESP32 microcontrollers`}
         imgs={[
-          [microcontrollers, "Microcontrollers"],
-          [microcontroller, "Single Microcontroller"],
+          [microcontrollers, "Microcontrollers", "width"],
+          [microcontroller, "Single Microcontroller", "width"],
         ]}
         links={[[github, "https://github.com/jasonntruong/Morning-Run"]]}
       />

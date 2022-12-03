@@ -6,9 +6,15 @@ interface Props {
   displayImg: string;
   setOpenModal: (boolean) => void;
   title: string;
+  limittingDimension: string;
 }
 
-function ImageModal({ displayImg, setOpenModal, title }: Props) {
+function ImageModal({
+  displayImg,
+  setOpenModal,
+  title,
+  limittingDimension,
+}: Props) {
   useEffect(() => {
     document.addEventListener("keyup", (e) => {
       if (e.key === "Escape") {
@@ -19,13 +25,16 @@ function ImageModal({ displayImg, setOpenModal, title }: Props) {
 
   return (
     <div>
-      <p className="modalTitle">{title}</p>
-
+      <p className="modalText">{title}</p>
       <p className="x" onClick={() => setOpenModal(false)}>
         x
       </p>
       <div className="imgContainer">
-        <img className="displayImg" src={displayImg} alt="displayimg" />
+        <img
+          className={`displayImg-${limittingDimension}`}
+          src={displayImg}
+          alt="displayimg"
+        />
       </div>
     </div>
   );

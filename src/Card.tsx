@@ -19,6 +19,7 @@ function Card(props: Props) {
   const [openModal, setOpenModal] = useState(false);
   const [displayImg, setdisplayImg] = useState("");
   const [displayTitle, setDisplayTitle] = useState("");
+  const [limittingDimension, setLimittingDimension] = useState("");
 
   return (
     <>
@@ -26,6 +27,7 @@ function Card(props: Props) {
         <ImageModal
           displayImg={displayImg}
           title={displayTitle}
+          limittingDimension={limittingDimension}
           setOpenModal={setOpenModal}
         />
       </Modal>
@@ -37,7 +39,7 @@ function Card(props: Props) {
         <div className="bottom">
           <p className="cardDesc">{props.desc}</p>
           <div className="rowImg">
-            {props.imgs?.map(([img, title]) => {
+            {props.imgs?.map(([img, title, limittingDimension = "height"]) => {
               return (
                 <Preview
                   key={img}
@@ -48,6 +50,7 @@ function Card(props: Props) {
                     setOpenModal(true);
                     setdisplayImg(img);
                     setDisplayTitle(title);
+                    setLimittingDimension(limittingDimension);
                   }}
                 />
               );

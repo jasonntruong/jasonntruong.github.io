@@ -1,8 +1,9 @@
 @mixin preview() {
   float: left;
-  padding-right: 2%;
-  padding-bottom: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .preview {

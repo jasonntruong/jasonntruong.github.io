@@ -1,9 +1,51 @@
-.modalTitle {
+// Mixins
+@mixin textStyle() {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 20px;
+    padding: 20px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  font-size: 12px;
+  padding: 12px;
   font-family: "Adelle";
   font-weight: bold;
-  font-size: 2vw;
-  padding-left: 2vw;
   display: inline-flex;
+}
+
+.modal {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 500px;
+    height: 500px;
+  }
+  @media (min-width: 1024px) {
+    width: 700px;
+    height: 700px;
+  }
+  width: 300px;
+  height: 300px;
+  background-color: #ebe7e4;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(25%);
+}
+
+.modal:focus {
+  outline: none;
+}
+
+.modalText {
+  @include textStyle;
+}
+
+.x {
+  @include textStyle;
+  float: right;
+  cursor: pointer;
 }
 
 .imgContainer {
@@ -12,6 +54,24 @@
   margin: auto;
 }
 
-.displayImg {
-  width: 50%;
+.displayImg-height {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 300px;
+  }
+  @media (min-width: 1024px) {
+    height: 500px;
+  }
+  height: 200px;
+  border-radius: 20px;
+}
+
+.displayImg-width {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 300px;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+  }
+  width: 200px;
+  border-radius: 20px;
 }

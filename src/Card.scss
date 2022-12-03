@@ -37,7 +37,6 @@
   }
   font-size: 10px;
   white-space: pre-line;
-
 }
 
 .top img {
@@ -66,28 +65,4 @@
   content: "";
   display: table;
   clear: both;
-}
-
-.modal {
-  width: min(35vw, 70vh);
-  height: min(35vw, 70vh);
-  background-color: #ebe7e4;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(25%);
-}
-
-.modal:focus {
-  outline: none;
-}
-
-.x {
-  font-family: "Adelle";
-  font-weight: bold;
-  font-size: 2vw;
-  float: right;
-  padding-right: 2vw;
-  display: "inline-flex";
-  cursor: pointer;
 }
