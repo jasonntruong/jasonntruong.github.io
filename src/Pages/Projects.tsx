@@ -84,8 +84,8 @@ function Projects({ navbar, isMobile }: Props) {
           </p>
         }
         imgs={[
-          [microcontrollers, "Microcontrollers", "width"],
-          [microcontroller, "Single Microcontroller", "width"],
+          [microcontrollers, "Microcontrollers"],
+          [microcontroller, "Single Microcontroller"],
         ]}
         links={[[github, "https://github.com/jasonntruong/Morning-Run"]]}
       />

@@ -1,42 +1,37 @@
 import "./Modal.scss";
 
-import React, { useEffect } from "react";
+import React, { useRef, useState } from "react";
+
+import { useEffect } from "react";
 
 interface Props {
-  displayImg: string;
-  setOpenModal: (boolean) => void;
+  img: string;
   title: string;
-  limittingDimension: string;
+  closeModal: (boolean) => void;
 }
-
-function ImageModal({
-  displayImg,
-  setOpenModal,
-  title,
-  limittingDimension,
-}: Props) {
+function ImageModal({ img, title, closeModal }: Props) {
+  const [width, setWidth] = useState("");
+  const [height, setHeight] = useState("");
+  const imageRef = useRef(null);
   useEffect(() => {
-    document.addEventListener("keyup", (e) => {
-      if (e.key === "Escape") {
-        setOpenModal(false);
-      }
-    });
-  }, []);
-
+    if (imageRef && imageRef.current) {
+      setWidth(imageRef.current["width"]);
+      setHeight(imageRef.current["height"]);
+    }
+  });
   return (
     <div>
-      <p className="modalText">{title}</p>
-      <p className="x" onClick={() => setOpenModal(false)}>
-        x
-      </p>
-      <div className="imgContainer">
-        <img
-          className={`displayImg-${limittingDimension}`}
-          src={displayImg}
-          loading="lazy"
-          alt={title + " img"}
-        />
+      <div>
+        <p className="modalText">{title}</p>
+        <p className="x" onClick={closeModal}>
+          x
+        </p>
       </div>
+      <img
+        className={width > height ? "displayImg-width" : "displayImg-height"}
+        src={img}
+        ref={imageRef}
+      />
     </div>
   );
 }

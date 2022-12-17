@@ -6,7 +6,6 @@ import React, { useState } from "react";
 import ImageModal from "./ImageModal.tsx";
 import Modal from "react-modal";
 import Preview from "./Preview.tsx";
-import topitems from "./imgs/topitems.png";
 
 Modal.setAppElement(document.getElementById("root"));
 interface Props {
@@ -19,16 +18,14 @@ function Card(props: Props) {
   const [openModal, setOpenModal] = useState(false);
   const [displayImg, setDisplayImg] = useState("");
   const [displayTitle, setDisplayTitle] = useState("");
-  const [limittingDimension, setLimittingDimension] = useState("");
 
   return (
     <>
       <Modal className="modal" isOpen={openModal}>
         <ImageModal
-          displayImg={displayImg}
+          img={displayImg}
           title={displayTitle}
-          limittingDimension={limittingDimension}
-          setOpenModal={setOpenModal}
+          closeModal={() => setOpenModal(false)}
         />
       </Modal>
       <div className="background">
@@ -38,7 +35,7 @@ function Card(props: Props) {
         <div className="bottom">
           <p className="cardDesc">{props.desc}</p>
           <div className="rowImg">
-            {props.imgs?.map(([img, title, limittingDimension = "height"]) => {
+            {props.imgs?.map(([img, title]) => {
               return (
                 <Preview
                   key={img}
@@ -50,7 +47,6 @@ function Card(props: Props) {
                     setOpenModal(true);
                     setDisplayImg(img);
                     setDisplayTitle(title);
-                    setLimittingDimension(limittingDimension);
                   }}
                 />
               );

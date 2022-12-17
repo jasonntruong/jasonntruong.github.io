@@ -6,32 +6,24 @@
   }
   @media (min-width: 1024px) {
     font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
+  line-height: 0px;
   font-size: 12px;
-  padding: 12px;
   font-family: "Adelle";
   font-weight: bold;
   display: inline-flex;
 }
 
 .modal {
-  @media (min-width: 768px) and (max-width: 1023px) {
-    width: 500px;
-    height: 500px;
-  }
-  @media (min-width: 1024px) {
-    width: 700px;
-    height: 700px;
-  }
-  width: 300px;
-  height: 300px;
+  padding: 15px;
+  padding-top: 0px;
+  width: fit-content;
   background-color: #ebe7e4;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(25%);
+  transform: translateY(2%);
+  box-shadow: 5px 5px 10px 1px darkgray;
 }
 
 .modal:focus {
