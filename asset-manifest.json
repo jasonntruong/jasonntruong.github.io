@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jasonntruong.github.io/static/css/main.e57b95af.css",
-    "main.js": "/jasonntruong.github.io/static/js/main.babe902f.js",
+    "main.css": "/jasonntruong.github.io/static/css/main.77705488.css",
+    "main.js": "/jasonntruong.github.io/static/js/main.c05f0659.js",
     "static/js/787.7a77b5df.chunk.js": "/jasonntruong.github.io/static/js/787.7a77b5df.chunk.js",
     "static/media/internals.png": "/jasonntruong.github.io/static/media/internals.8aa584c3e76549bcfc56.png",
     "static/media/dontspray.png": "/jasonntruong.github.io/static/media/dontspray.dbf337a11c2e6c626ad7.png",
+    "static/media/headshot.png": "/jasonntruong.github.io/static/media/headshot.0a359474ce07d0bec778.png",
     "static/media/cafe.png": "/jasonntruong.github.io/static/media/cafe.19cfad0cfd5d7e29e64e.png",
     "static/media/keyboard.png": "/jasonntruong.github.io/static/media/keyboard.19b978ce997a07c9ae0d.png",
     "static/media/cscu.png": "/jasonntruong.github.io/static/media/cscu.44d69993d05fd5da822d.png",
-    "static/media/headshot.png": "/jasonntruong.github.io/static/media/headshot.095d286e6e74e09e19b7.png",
     "static/media/microcontrollers.png": "/jasonntruong.github.io/static/media/microcontrollers.c75fcfa7796d3d8c4bd2.png",
     "static/media/microcontroller.png": "/jasonntruong.github.io/static/media/microcontroller.206724407f90090093c1.png",
     "static/media/four.png": "/jasonntruong.github.io/static/media/four.0752b04389f947b8b010.png",
@@ -23,12 +23,12 @@
     "static/media/linkedin.png": "/jasonntruong.github.io/static/media/linkedin.ba884e1f9ad4362348c1.png",
     "static/media/hamburger.png": "/jasonntruong.github.io/static/media/hamburger.a633845bca57a0d1a648.png",
     "index.html": "/jasonntruong.github.io/index.html",
-    "main.e57b95af.css.map": "/jasonntruong.github.io/static/css/main.e57b95af.css.map",
-    "main.babe902f.js.map": "/jasonntruong.github.io/static/js/main.babe902f.js.map",
+    "main.77705488.css.map": "/jasonntruong.github.io/static/css/main.77705488.css.map",
+    "main.c05f0659.js.map": "/jasonntruong.github.io/static/js/main.c05f0659.js.map",
     "787.7a77b5df.chunk.js.map": "/jasonntruong.github.io/static/js/787.7a77b5df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e57b95af.css",
-    "static/js/main.babe902f.js"
+    "static/css/main.77705488.css",
+    "static/js/main.c05f0659.js"
   ]
 }
