@@ -86,7 +86,7 @@ function App() {
               className="imgLink"
               img={email}
               type={"link"}
-              extra={"mailto:jason.truong@ryerson.ca"}
+              extra={"mailto:jason.truong@torontomu.ca"}
               smaller={true}
               alt={"Email"}
             />
