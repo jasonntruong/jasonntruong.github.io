@@ -51,6 +51,27 @@ function Projects({ navbar, isMobile }: Props) {
         ]}
       />
       <Card
+        title="GetFit."
+        desc={
+          <p>
+            {
+              "Created a mobile application that helps users get into shape as it checks whether the user is exercising by detecting the presence of exercise equipment in the picture they are asked to take throughout their workout routine"
+            }
+            <br />
+            <br />
+            {
+              "If the user has skipped their gym session they are charged two dollars as punishment so they can build stronger gym habits"
+            }
+            <br />
+            <br />
+            {
+              "Developed using Flutter, Dart, Tensorflow Lite, Python, Computer Vision, Object Detection, Notifications, and Xcode"
+            }
+          </p>
+        }
+        links={[[github, "https://github.com/jasonntruong/GetFit"]]}
+      />
+      <Card
         title="Coupon Chef"
         desc={
           <p>
