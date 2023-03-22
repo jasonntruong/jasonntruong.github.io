@@ -5,10 +5,10 @@ import Card from "../Card.tsx";
 import HamburgerMenu from "../HamburgerMenu.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import React from "react";
-import cafe from "../imgs/about/cafe.png";
-import cscu from "../imgs/about/cscu.png";
-import headshot from "../imgs/about/headshot.png";
-import keyboard from "../imgs/about/keyboard.png";
+import cafe from "../imgs/about/cafe.jpg";
+import cscu from "../imgs/about/cscu.jpg";
+import headshot from "../imgs/about/headshot.jpg";
+import keyboard from "../imgs/about/keyboard.jpg";
 import { makeLink } from "../Helpers.tsx";
 
 interface Props {

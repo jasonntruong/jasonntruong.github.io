@@ -5,12 +5,12 @@ import Card from "../Card.tsx";
 import HamburgerMenu from "../HamburgerMenu.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import React from "react";
-import dontspray from "../imgs/projects/dontspray.png";
+import dontspray from "../imgs/projects/dontspray.jpg";
 import github from "../imgs/github.png";
-import internals from "../imgs/projects/internals.png";
+import internals from "../imgs/projects/internals.jpg";
 import { makeLink } from "../Helpers.tsx";
-import microcontroller from "../imgs/projects//microcontroller.png";
-import microcontrollers from "../imgs/projects//microcontrollers.png";
+import microcontroller from "../imgs/projects//microcontroller.jpg";
+import microcontrollers from "../imgs/projects//microcontrollers.jpg";
 import youtube from "../imgs/youtube.png";
 
 interface Props {
