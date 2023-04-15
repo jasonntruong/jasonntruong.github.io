@@ -35,7 +35,7 @@ function About({ navbar, isMobile }: Props) {
             {makeLink("GitHub", "https://www.github.com")} {":D"}
           </p>
         }
-        imgs={[[headshot, "A Big Me"]]}
+        imgs={[[headshot, "Me :)"]]}
       />
       <Card
         title="Hobbies"
