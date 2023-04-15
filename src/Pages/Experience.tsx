@@ -15,7 +15,11 @@ function Experience({ navbar, isMobile }: Props) {
     <>
       <h1 className="title">Experience</h1>
       <Card
-        title="TD Bank at TD Labs"
+        title="GetQuorum - Incoming Junior Software Developer Intern"
+        desc={<p>{"Toronto based startup. Coming soon..."}</p>}
+      />
+      <Card
+        title="TD Bank at TD Lab - Software Developer Intern"
         desc={
           <p>
             {
@@ -35,7 +39,7 @@ function Experience({ navbar, isMobile }: Props) {
         }
       />
       <Card
-        title="Entrust"
+        title="Entrust - Mobile Software Developer Intern"
         desc={
           <p>
             {
@@ -50,7 +54,7 @@ function Experience({ navbar, isMobile }: Props) {
         }
       />
       <Card
-        title="Code Ninjas"
+        title="Code Ninjas - Coding Instructor"
         desc={
           <p>
             {
