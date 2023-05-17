@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jasonntruong.github.io/static/css/main.77705488.css",
-    "main.js": "/jasonntruong.github.io/static/js/main.2604b3ea.js",
+    "main.css": "/jasonntruong.github.io/static/css/main.a16b954d.css",
+    "main.js": "/jasonntruong.github.io/static/js/main.7c24cab7.js",
     "static/js/787.7a77b5df.chunk.js": "/jasonntruong.github.io/static/js/787.7a77b5df.chunk.js",
     "static/media/keyboard.jpg": "/jasonntruong.github.io/static/media/keyboard.1cdd9fd515ff764bbd2d.jpg",
     "static/media/headshot.jpg": "/jasonntruong.github.io/static/media/headshot.6e1dc1bc3e0eb129ec1c.jpg",
@@ -23,12 +23,12 @@
     "static/media/linkedin.png": "/jasonntruong.github.io/static/media/linkedin.ba884e1f9ad4362348c1.png",
     "static/media/hamburger.png": "/jasonntruong.github.io/static/media/hamburger.a633845bca57a0d1a648.png",
     "index.html": "/jasonntruong.github.io/index.html",
-    "main.77705488.css.map": "/jasonntruong.github.io/static/css/main.77705488.css.map",
-    "main.2604b3ea.js.map": "/jasonntruong.github.io/static/js/main.2604b3ea.js.map",
+    "main.a16b954d.css.map": "/jasonntruong.github.io/static/css/main.a16b954d.css.map",
+    "main.7c24cab7.js.map": "/jasonntruong.github.io/static/js/main.7c24cab7.js.map",
     "787.7a77b5df.chunk.js.map": "/jasonntruong.github.io/static/js/787.7a77b5df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77705488.css",
-    "static/js/main.2604b3ea.js"
+    "static/css/main.a16b954d.css",
+    "static/js/main.7c24cab7.js"
   ]
 }
