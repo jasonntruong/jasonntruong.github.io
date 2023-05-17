@@ -2,6 +2,7 @@
 import "../App.scss";
 
 import Card from "../Card.tsx";
+import { FadeIn } from "react-slide-fade-in";
 import HamburgerMenu from "../HamburgerMenu.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import React from "react";
@@ -151,9 +152,11 @@ function Projects({ navbar, isMobile }: Props) {
   }
   return (
     <div className="row">
-      <div className="column2">
-        <div className="left-content">{info}</div>
-      </div>
+      <FadeIn>
+        <div className="column2">
+          <div className="left-content">{info}</div>
+        </div>
+      </FadeIn>
       <div className="column">{navbar}</div>
     </div>
   );
