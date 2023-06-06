@@ -14,6 +14,7 @@ import Projects from "./Pages/Projects.tsx";
 import email from "./imgs/email.png";
 import github from "./imgs/github.png";
 import linkedin from "./imgs/linkedin.png";
+import resume from "./resume.pdf";
 
 function App() {
   const [selected, setSelected] = useState("");
