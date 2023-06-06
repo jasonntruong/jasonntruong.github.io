@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { FadeIn } from "react-slide-fade-in";
 import HamburgerMenu from "../HamburgerMenu.tsx";
 import Hands from "../Hands.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
@@ -15,8 +16,8 @@ function Home(props: Props) {
   const info = (
     <>
       <img className="globe" src={globe} loading="lazy" />
-      <p className="desc">Third Year CS @ TMU</p>
-      <p className="desc">Software Dev Intern @ TD</p>
+      <p className="desc">Fourth Year CS @ TMU</p>
+      <p className="desc">Software Dev Intern @ GetQuorum (ex. TD, Entrust)</p>
       <p className="desc">Aspiring SWE</p>
     </>
   );
@@ -31,10 +32,12 @@ function Home(props: Props) {
   }
   return (
     <div className="row">
-      <div className="column">{info}</div>
-      <div className="column">
-        <Hands hovering={props.hovering} />
-      </div>
+      <FadeIn>
+        <div className="column">{info}</div>
+        <div className="column">
+          <Hands hovering={props.hovering} />
+        </div>
+      </FadeIn>
       <div className="column">{props.navbar}</div>
     </div>
   );

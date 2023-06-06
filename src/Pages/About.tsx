@@ -2,6 +2,7 @@
 import "../App.scss";
 
 import Card from "../Card.tsx";
+import { FadeIn } from "react-slide-fade-in";
 import HamburgerMenu from "../HamburgerMenu.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import React from "react";
@@ -25,7 +26,7 @@ function About({ navbar, isMobile }: Props) {
         desc={
           <p>
             {
-              "I'm a 20 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto"
+              "I'm a 20 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto who's very interested in front-end and app development!"
             }
             <br />
             <br />
@@ -35,7 +36,22 @@ function About({ navbar, isMobile }: Props) {
             {makeLink("GitHub", "https://www.github.com")} {":D"}
           </p>
         }
-        imgs={[[headshot, "A Big Me"]]}
+        imgs={[[headshot, "Me :)"]]}
+      />
+      <Card
+        title="Tech Stack"
+        desc={
+          <p>
+            {
+              "Programming Languages: Java, Python, TypeScript, Dart, C, C++, JavaScript, SQL"
+            }
+            <br />
+            <br />
+            {
+              "Frameworks and Tools: React Native, ReactJS, Flutter, Tailwind, Tensorflow Lite, Selenium, Git, Bitbucket, Android Studio, Xcode"
+            }
+          </p>
+        }
       />
       <Card
         title="Hobbies"
@@ -92,9 +108,11 @@ function About({ navbar, isMobile }: Props) {
   }
   return (
     <div className="row">
-      <div className="column2">
-        <div className="left-content">{content}</div>
-      </div>
+      <FadeIn>
+        <div className="column2">
+          <div className="left-content">{content}</div>
+        </div>
+      </FadeIn>
       <div className="column">{navbar}</div>
     </div>
   );
