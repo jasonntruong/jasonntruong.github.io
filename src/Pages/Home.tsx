@@ -5,6 +5,7 @@ import Hands from "../Hands.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import React from "react";
 import globe from "../imgs/globe.webp";
+import resume from "../resume.pdf";
 
 interface Props {
   hovering: string;
@@ -19,6 +20,11 @@ function Home(props: Props) {
       <p className="desc">Fourth Year CS @ TMU</p>
       <p className="desc">Software Dev Intern @ GetQuorum (ex. TD, Entrust)</p>
       <p className="desc">Aspiring SWE</p>
+      <p className="desc">
+        <a href={resume} target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+      </p>
     </>
   );
 
