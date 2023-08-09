@@ -42,13 +42,21 @@ function About({ navbar, isMobile }: Props) {
         title="Tech Stack"
         desc={
           <p>
+            <b>Programming Languages: </b>
             {
-              "Programming Languages: Java, Python, TypeScript, Dart, C, C++, JavaScript, SQL"
+              "TypeScript, Java, Python, Dart, C, C++, JavaScript, SQL, HTML/CSS"
             }
             <br />
             <br />
+            <b>Technologies:</b>
             {
-              "Frameworks and Tools: React Native, ReactJS, Flutter, Tailwind, Tensorflow Lite, Selenium, Git, Bitbucket, Android Studio, Xcode"
+              " React Native, ReactJS, Flutter, Vue.js, Tailwind, .NET, Node.js, jQuery, Flask, Selenium, OpenCV, TensorFlow Lite"
+            }
+            <br />
+            <br />
+            <b>Tools:</b>
+            {
+              " AWS SQS, AWS S3, Git, Android, Docker, Linux, Arduino, Google Cloud, Jira, Bitbucket, Cypress, CircleCI"
             }
           </p>
         }
@@ -79,17 +87,25 @@ function About({ navbar, isMobile }: Props) {
         desc={
           <p>
             {
-              "Currently I'm VP Communications on TMU's Computer Science Course Union"
+              "Currently I'm Co-President on TMU's Computer Science Course Union"
             }
             <br />
             <br />
             {
-              "I act as the public relations contact for students and student societies on behalf of the CSCU. I also design promotions and promote for all of our events via our "
+              "Leading a student team of 20+ members and working alongside 10+ company professionals including LinkedIn, Shopify, and Amazon to organize 15+ academic and career initiatives for the CS student body of 1000+ students"
             }
-            {makeLink("Instagram", "https://www.instagram.com/tmu_cscu")}
-            {", "}
-            {makeLink("website", "https://www.tmucscu.com")}
-            {", and monthly newsletter"}
+            <br />
+            <br />
+            {"Developed and maintained the "}
+            {makeLink(
+              "TMU CSCU wiki",
+              "https://github.com/tmucscu/tmucscu.github.io"
+            )}
+            {
+              " created with Docusaurus as an information base for the student body and a "
+            }
+            {makeLink("Discord bot", "https://github.com/tmucscu/kong")}
+            {" made with Python for internal members to reserve our office"}
           </p>
         }
         imgs={[[cscu, "CSCU Pub Night Social"]]}

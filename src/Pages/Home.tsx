@@ -17,8 +17,8 @@ function Home(props: Props) {
     <>
       <img className="globe" src={globe} loading="lazy" />
       <p className="desc">Fourth Year CS @ TMU</p>
-      <p className="desc">Software Dev Intern @ GetQuorum (ex. TD, Entrust)</p>
-      <p className="desc">Aspiring SWE</p>
+      <p className="desc">Incoming Software Engineer Intern @ Coursera</p>
+      <p className="desc">Software Dev Intern @ GetQuorum</p>
     </>
   );
 
