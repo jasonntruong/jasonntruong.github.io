@@ -17,7 +17,7 @@ function Experience({ navbar, isMobile }: Props) {
     <>
       <h1 className="title">Experience</h1>
       <Card
-        title="Coursera - Incoming Software Engineer Intern"
+        title="Coursera - Software Engineer Intern"
         desc={<p>{"Incoming ..."}</p>}
       />
       <Card
@@ -25,12 +25,17 @@ function Experience({ navbar, isMobile }: Props) {
         desc={
           <p>
             {
-              " Optimized CircleCI CI/CD pipeline by decoupling and distributing 3000+ tests across 4 parallel processing environments, resulting in 200% faster average end-to-end test time and faster feedback loops"
+              "Created full-stack Vue.js page to manage outsourced print vendors with ExpressJS REST API and PostgreSQL table"
             }
             <br />
             <br />
             {
-              "Developing JOI validation schemas and Vuetify text field rules to ensure data entry quality for the SQL database"
+              "Developed SQS system to automate bulk S3 file operations with Lambda functions for seamless data management"
+            }
+            <br />
+            <br />
+            {
+              "Reduced CircleCI CI/CD end-to-end test time by 200% by decoupling 3000+ tests across 4 parallel environments"
             }
             <br />
             <br />
@@ -44,13 +49,13 @@ function Experience({ navbar, isMobile }: Props) {
         title="TD Bank at TD Lab - Software Developer Intern"
         desc={
           <p>
-            {"Architected and scaled the new "}
+            {"Architected end-to-end the new "}
             {makeLink(
-              "TD Adapted Accessibility tool",
-              "https://ca.finance.yahoo.com/news/td-launches-accessibility-tool-drive-100000726.html?guccounter=1"
+              "TD Accessibility Adapter",
+              "https://chrome.google.com/webstore/detail/td-accessibility-adapter/gojenooamlnamkmglonclikkdnakpjoe/related"
             )}
             {
-              ", a browser plugin with settings to manipulate any website’s UI to the needs of 1000+ TD employees - with planned distribution for 27+ million TD customers"
+              ", a Chrome extension with settings to increase accessibility of any website’s UI - scaled from whiteboard to pilot with 95,000+ TD employees to official release"
             }
             <br />
             <br />

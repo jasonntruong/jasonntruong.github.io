@@ -26,7 +26,7 @@ function About({ navbar, isMobile }: Props) {
         desc={
           <p>
             {
-              "I'm a 20 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto who's very interested in front-end and app development!"
+              "I'm a 21 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto who's very interested in front-end and app development!"
             }
             <br />
             <br />
