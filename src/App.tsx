@@ -1,7 +1,7 @@
 // @ts-nocheck
 import "./App.scss";
 
-import { Link, Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
 import About from "./Pages/About.tsx";
@@ -28,7 +28,7 @@ function App() {
   });
 
   useEffect(() => {
-    let currentLocation = window.location.hash.substring(2);
+    let currentLocation = window.location.pathname.substring(2);
     currentLocation = currentLocation.length === 0 ? "home" : currentLocation;
     setSelected(currentLocation);
     setHovering(currentLocation);
