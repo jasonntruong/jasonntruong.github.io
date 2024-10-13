@@ -26,7 +26,7 @@ function About({ navbar, isMobile }: Props) {
         desc={
           <p>
             {
-              "I'm a 21 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto who's very interested in front-end and app development!"
+              "I'm a 22 year old Vietnamese-Canadian Computer Science Co-op student at TMU (formerly Ryerson) from Toronto who's very interested in front-end and app development!"
             }
             <br />
             <br />
@@ -44,19 +44,19 @@ function About({ navbar, isMobile }: Props) {
           <p>
             <b>Programming Languages: </b>
             {
-              "TypeScript, Java, Python, Dart, C, C++, JavaScript, SQL, HTML/CSS"
+              "TypeScript, Java, Python, Dart, C, C++, Ruby, Lua, JavaScript, Elixir, SQL, HTML/CSS"
             }
             <br />
             <br />
             <b>Technologies:</b>
             {
-              " React Native, ReactJS, Flutter, Vue.js, Tailwind, .NET, Node.js, jQuery, Flask, Selenium, OpenCV, TensorFlow Lite"
+              " React Native, ReactJS, Flutter, Vue.js, Next.js, ExpressJS, Firebase, GraphQL, Flask, Tailwind, .NET, Node.js, jQuery, Flask, Selenium, OpenCV, TensorFlow Lite"
             }
             <br />
             <br />
             <b>Tools:</b>
             {
-              " AWS SQS, AWS S3, Git, Android, Docker, Linux, Arduino, Google Cloud, Jira, Bitbucket, Cypress, CircleCI"
+              " AWS (SQS, S3, Lambda, SSM, etc), Git, Android, Docker, Linux, Arduino, Google Cloud, Jenkins, Jira, Bitbucket, Cypress, CircleCI"
             }
           </p>
         }

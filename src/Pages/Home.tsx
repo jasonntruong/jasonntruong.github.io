@@ -16,8 +16,8 @@ function Home(props: Props) {
   const info = (
     <>
       <img className="globe" src={globe} loading="lazy" />
-      <p className="desc">Fourth Year CS @ TMU</p>
-      <p className="desc">Software Engineer Intern @ Coursera</p>
+      <p className="desc">Fifth Year CS @ TMU</p>
+      <p className="desc">Prev SWE @ Coursera, theScore/ESPN, TD</p>
       <p className="desc">Always Learning</p>
     </>
   );

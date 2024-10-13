@@ -17,8 +17,44 @@ function Experience({ navbar, isMobile }: Props) {
     <>
       <h1 className="title">Experience</h1>
       <Card
+        title="theScore / ESPN - Software Engineer Intern"
+        desc={
+          <p>
+            {
+              "Developed components for launch of a new critical rewards feature that led to a increase in user bets, driving substantial improvements in user engagement and platform revenue by collaborating with 4 cross-functional product teams"
+            }
+            <br />
+            <br />
+            {
+              "Redesigned key features during product rebranding using React, TypeScript, Tailwind, and GraphQL, resulting in a significantly enhanced user experience for more than 5 million active users across web platforms"
+            }
+            <br />
+            <br />
+            {
+              "Optimized analytic pipelines to track millions of transactions daily, enhancing reporting insights"
+            }
+          </p>
+        }
+      />
+      <Card
         title="Coursera - Software Engineer Intern"
-        desc={<p>{"Incoming ..."}</p>}
+        desc={
+          <p>
+            {
+              "Engineered full-stack React admin dashboard with GraphQL queries + mutations using SSM AWS Parameter Store and Jenkins API to allow developers to configure deployments, E2E tests, and manage IAM roles during incidents"
+            }
+            <br />
+            <br />
+            {
+              "Added GPT-4, Claude, + Bard LLMs to increase chat quality & length by 5000% for self-hosted AI chatbot in Next.js"
+            }
+            <br />
+            <br />
+            {
+              "Optimized GitHub actions to manage CODEOWNERS on 200% more components, improving cross-team PR review"
+            }
+          </p>
+        }
       />
       <Card
         title="GetQuorum - Junior Software Developer Intern"
