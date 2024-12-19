@@ -64,10 +64,11 @@
 
 
 // Styling
-.container {
-  @include containerWidth;
-  position: absolute;
+.navContainer {
+  display: flex;
+  justify-content: center;
 }
+
 .selected {
   @include containerStyle;
   background: #282828;

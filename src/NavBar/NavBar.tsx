@@ -13,8 +13,7 @@ interface Props {
 }
 function NavBar(props: Props) {
   return (
-    <div>
-      <div className="container" onMouseLeave={() => props.onLeave()}></div>
+    <div className="navContainer" onMouseLeave={() => props.onLeave()}>
       <div className="bar">
         <div className="line" />
 
