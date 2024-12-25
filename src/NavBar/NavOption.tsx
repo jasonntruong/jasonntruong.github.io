@@ -26,7 +26,7 @@ function NavOption(props: Props) {
     >
       <div className="circle" />
 
-      <p className="text">{props.title}</p>
+      <p className="nonselectedText">{props.title}</p>
     </div>
   );
 }

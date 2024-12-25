@@ -62,7 +62,6 @@
   }
 }
 
-
 // Styling
 .navContainer {
   display: flex;
@@ -82,8 +81,12 @@
 
 .nonselected {
   @include containerStyle;
-  font-family: "Adelle";
+  font-family: "Geist Sans";
   position: relative;
+}
+
+.nonselectedText {
+  padding-top: 5px;
 }
 
 .circle {
@@ -97,7 +100,6 @@
   width: 5px;
   background: #b8b3b3;
   position: absolute;
-
 }
 
 .link {
