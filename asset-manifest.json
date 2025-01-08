@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.818cc856.css",
+    "main.css": "/static/css/main.fdf1817d.css",
     "main.js": "/static/js/main.d0116b90.js",
     "static/js/787.7a77b5df.chunk.js": "/static/js/787.7a77b5df.chunk.js",
     "static/media/keyboard.jpg": "/static/media/keyboard.1cdd9fd515ff764bbd2d.jpg",
@@ -30,12 +30,12 @@
     "static/media/playfair-display-vietnamese-400-normal.woff": "/static/media/playfair-display-vietnamese-400-normal.40221529e528ff3e5a46.woff",
     "static/media/playfair-display-vietnamese-400-normal.woff2": "/static/media/playfair-display-vietnamese-400-normal.5c877b3fa47066dbb461.woff2",
     "index.html": "/index.html",
-    "main.818cc856.css.map": "/static/css/main.818cc856.css.map",
+    "main.fdf1817d.css.map": "/static/css/main.fdf1817d.css.map",
     "main.d0116b90.js.map": "/static/js/main.d0116b90.js.map",
     "787.7a77b5df.chunk.js.map": "/static/js/787.7a77b5df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.818cc856.css",
+    "static/css/main.fdf1817d.css",
     "static/js/main.d0116b90.js"
   ]
 }
