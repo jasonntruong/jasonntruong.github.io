@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8034fc45.css",
-    "main.js": "/static/js/main.7850c0b8.js",
+    "main.css": "/static/css/main.818cc856.css",
+    "main.js": "/static/js/main.d0116b90.js",
     "static/js/787.7a77b5df.chunk.js": "/static/js/787.7a77b5df.chunk.js",
     "static/media/keyboard.jpg": "/static/media/keyboard.1cdd9fd515ff764bbd2d.jpg",
     "static/media/headshot.jpg": "/static/media/headshot.6e1dc1bc3e0eb129ec1c.jpg",
@@ -15,21 +15,27 @@
     "static/media/four.png": "/static/media/four.8ccfb2899498fbe723b1.png",
     "static/media/globe.webp": "/static/media/globe.fa8e78bf47af887153c5.webp",
     "static/media/microcontrollers.jpg": "/static/media/microcontrollers.5d8e872c2e096340b710.jpg",
-    "static/media/RoxboroughCF-BoldItalic.otf": "/static/media/RoxboroughCF-BoldItalic.711224acdb29bce27b1d.otf",
-    "static/media/RoxboroughCF-Bold.otf": "/static/media/RoxboroughCF-Bold.0ef40514fddda34af155.otf",
     "static/media/microcontroller.jpg": "/static/media/microcontroller.3aa0ca41daf07773702f.jpg",
     "static/media/geist-sans-latin-400-normal.woff": "/static/media/geist-sans-latin-400-normal.fdd1e0fe220cea9f1fad.woff",
     "static/media/geist-sans-latin-400-normal.woff2": "/static/media/geist-sans-latin-400-normal.32c502ac52226b7f181e.woff2",
+    "static/media/playfair-display-latin-400-normal.woff": "/static/media/playfair-display-latin-400-normal.9c7c1543d792cb6bb2b2.woff",
     "static/media/email.png": "/static/media/email.240776c0ce2f66df6ca0.png",
     "static/media/linkedin.png": "/static/media/linkedin.ba884e1f9ad4362348c1.png",
+    "static/media/playfair-display-latin-400-normal.woff2": "/static/media/playfair-display-latin-400-normal.01127cbe42de896f8511.woff2",
+    "static/media/playfair-display-latin-ext-400-normal.woff": "/static/media/playfair-display-latin-ext-400-normal.9ea2943ecdca370550c2.woff",
+    "static/media/playfair-display-cyrillic-400-normal.woff": "/static/media/playfair-display-cyrillic-400-normal.e8f79ad5a76821f7165f.woff",
+    "static/media/playfair-display-latin-ext-400-normal.woff2": "/static/media/playfair-display-latin-ext-400-normal.ec5b9e3c4c997f6bac35.woff2",
+    "static/media/playfair-display-cyrillic-400-normal.woff2": "/static/media/playfair-display-cyrillic-400-normal.3dc94a1021075fd54b85.woff2",
     "static/media/hamburger.png": "/static/media/hamburger.a633845bca57a0d1a648.png",
+    "static/media/playfair-display-vietnamese-400-normal.woff": "/static/media/playfair-display-vietnamese-400-normal.40221529e528ff3e5a46.woff",
+    "static/media/playfair-display-vietnamese-400-normal.woff2": "/static/media/playfair-display-vietnamese-400-normal.5c877b3fa47066dbb461.woff2",
     "index.html": "/index.html",
-    "main.8034fc45.css.map": "/static/css/main.8034fc45.css.map",
-    "main.7850c0b8.js.map": "/static/js/main.7850c0b8.js.map",
+    "main.818cc856.css.map": "/static/css/main.818cc856.css.map",
+    "main.d0116b90.js.map": "/static/js/main.d0116b90.js.map",
     "787.7a77b5df.chunk.js.map": "/static/js/787.7a77b5df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8034fc45.css",
-    "static/js/main.7850c0b8.js"
+    "static/css/main.818cc856.css",
+    "static/js/main.d0116b90.js"
   ]
 }
