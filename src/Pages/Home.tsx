@@ -17,7 +17,7 @@ function Home(props: Props) {
     <>
       <img className="globe" src={globe} loading="lazy" />
       <p className="desc">Fifth Year CS @ TMU</p>
-      <p className="desc">Prev SWE @ Coursera, theScore/ESPN, TD</p>
+      <p className="desc">Incoming SWE @ Shopify</p>
       <p className="desc">Always Learning</p>
     </>
   );

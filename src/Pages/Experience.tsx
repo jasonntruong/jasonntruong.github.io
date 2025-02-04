@@ -16,6 +16,7 @@ function Experience({ navbar, isMobile }: Props) {
   const content = (
     <>
       <h1 className="title">Experience</h1>
+      <Card title="Shopify - Software Engineer Intern" desc={<p>...</p>} />
       <Card
         title="theScore / ESPN - Software Engineer Intern"
         desc={

@@ -111,33 +111,6 @@ function Projects({ navbar, isMobile }: Props) {
         ]}
         links={[[github, "https://github.com/jasonntruong/Morning-Run"]]}
       />
-      <Card
-        title="Manga Swiper"
-        desc={
-          <p>
-            {
-              "I always want to read manga when I'm eating but I can't or my keyboard will get dirty. So I built Manga Swiper."
-            }
-            <br />
-            <br />
-            {
-              "Using the computer's webcam to view the user's hand, Manga Swiper allows you to read manga via hand gestures"
-            }
-            <br />
-            <br /> {"Swipe up: Go to next page"} <br />
-            {"Swipe left: Go to next chapter"} <br />
-            {"Swipe right: Go to previous chapter"} <br />
-            <br />
-            {
-              "Built using Python, Open CV2 API for camera control, Mediapipe API for hand tracking, and Pynput to automate the keyboard."
-            }
-            <br />
-            <br /> {"Pro: Now I feel like I have the force when I'm reading"}
-          </p>
-        }
-        links={[[github, "https://github.com/jasonntruong/Manga-Swiper"]]}
-      />
-
       <br />
     </>
   );
